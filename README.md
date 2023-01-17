@@ -1,4 +1,4 @@
-This tool will help you price your pre-loved and vintage clothes 10X faster.
+This tool will help you price your vintage and pre-loved clothing - 10X faster.
 
 Please stay tuned.
 
