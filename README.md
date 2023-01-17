@@ -8,7 +8,7 @@ Clone the repository to your local machine and add your HTML, CSS, and JavaScrip
 
 Push the changes to the master branch of the repository on GitHub.
 
-Wait for a few minutes for GitHub to build and deploy your site. You can then view your site by going to https://username.github.io.
+Wait for a few minutes for GitHub to build and deploy your site. You can then view your site by going to your username dot github dot io
 
 ---
 To connect your domain to your GitHub Pages site, you'll need to configure your domain's DNS settings to point to GitHub's servers. You can do this by adding a CNAME record to your domain's DNS configuration that points to username.github.io.
