@@ -1,5 +1,5 @@
 # COMING SOON.
 
-We will make it 10X faster for you to figure out what you should price your pre-loved and vintage clothes for resale.
+This tool will help you price your pre-loved and vintage clothes 10X faster.
 
 Please stay tuned.
