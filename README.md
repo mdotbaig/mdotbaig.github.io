@@ -2,7 +2,7 @@
 
 Creating a GitHub page:
 
-Create a new repository on GitHub with the name username.github.io, where username is your GitHub username.
+Create a new repository on GitHub with the name 'username.github.io', where username is your GitHub username.
 
 Clone the repository to your local machine and add your HTML, CSS, and JavaScript files to the repository.
 
