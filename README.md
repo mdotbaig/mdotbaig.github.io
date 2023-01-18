@@ -11,7 +11,8 @@ Email: mbaig.baig@gmail.com
 Twitter: @mdotbaig
 
 -------
-We comply with all applicable laws and regulations, including those related to taxes and consumer protection, when allowing our users to connect to eBay to sell items. 
 
-We are committed to protecting our users' data and will follow best practices for data security and privacy.
+We comply with all applicable laws and regulations, including those related to taxes and consumer protection, when allowing our users to connect to eBay to sell items. We are committed to protecting our users' data and will follow best practices for data security and privacy.
+
 -------
+Please stay tuned.
