@@ -1,5 +1,4 @@
-<img src="werabl_finish_rectangle.png" width="300" height="200">
-
+<img src="werabl_finish_rectangle.png" width="30%" height="auto">
 
 
 Through years of experience, we understand the challenges that come with pricing research and have developed a tool to solve this problem. Our tool is specifically optimized for efficiency of operations and makes the pricing research process 10X faster.
