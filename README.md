@@ -1,4 +1,6 @@
-![image-description](WerablSiteLogo.png)
+![image-description](werabl finish rectangle.png)
+
+
 
 Our team possesses a strategic blend of technical know-how and hands-on experience in the vintage clothing industry. One of our co-founders, in particular, has a demonstrated success in the vintage clothing business, having established a company that successfully fulfills over 3000+ orders per month. 
 
