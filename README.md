@@ -7,7 +7,7 @@
 </p>
 
 ---
-We've developed a tool that makes product pricing research 10X faster for the vintage clothing businesses.
+We've developed a tool that makes product pricing research 10X faster for vintage clothing businesses.
 
 Our team possesses a strategic blend of technical know-how and hands-on experience in the vintage clothing industry. One of our co-founders, in particular, has a demonstrated success in the vintage clothing business, having established a company that successfully fulfills over 3000+ orders per month. Through years of experience, we have understood the challenges that come with pricing products and have developed our tool to solve this problem.
 
