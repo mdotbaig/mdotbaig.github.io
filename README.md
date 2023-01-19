@@ -1,9 +1,13 @@
 <p align="center">
-  <img src="Werabl_Used_Clothing_Industry-minimalist-navy-silver-magenta-beige-used-clothes-warehouse-illustration-variety-shirts-pants-dresses-suits-racks-shelves-warehouse-workers-negative-space.png" width="50%" height="auto">
+  <img src="werabl_finish_rectangle.png" width="75%" height="auto">
+</p>
+
+<p align="center">
+  <img src="Werabl_Used_Clothing-Industry_future-thrift-stores-online-marketplaces-technology.png" width="75%" height="auto">
 </p>
 
 ---
-We have developed a tool that makes the pricing research process 10X faster for the vintage clothing business - optimizing the efficiency of operations.
+We've developed a tool that makes product pricing research 10X faster for the vintage clothing businesses.
 
 Our team possesses a strategic blend of technical know-how and hands-on experience in the vintage clothing industry. One of our co-founders, in particular, has a demonstrated success in the vintage clothing business, having established a company that successfully fulfills over 3000+ orders per month. Through years of experience, we have understood the challenges that come with pricing products and have developed our tool to solve this problem.
 
