@@ -17,9 +17,11 @@ Our proprietary process enables us to identify the most closely matching vintage
 
 We believe that this tool can be of tremendous value to anyone in the vintage and pre-loved clothing industry and we are excited to share it with you. Let our experience and success work for you. With our tool, you can improve your pricing research process and increase your chances of making a sale.
 
+Please stay tuned for our launch.
+
 -------
 
-Our contact information is:
+Contact Us
 
 Email: mbaig.baig@gmail.com
 
@@ -31,4 +33,4 @@ We comply with all applicable laws and regulations, including those related to t
 
 -------
 
-Please stay tuned.
+Copyright © 2023 Werabl. All rights reserved.
