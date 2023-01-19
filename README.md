@@ -9,7 +9,7 @@
 ---
 We've developed a tool that makes product pricing research 10X faster for vintage clothing businesses.
 
-Our team possesses a strategic blend of technical know-how and hands-on experience in the vintage clothing industry. One of our co-founders, in particular, has a demonstrated success in the vintage clothing business, having established a company that successfully fulfills over 3000+ orders per month. Through years of experience, we have understood the challenges that come with pricing products and have developed our tool to solve this problem.
+Our team possesses a strategic blend of technical know-how and hands-on experience in the vintage clothing industry. One of our co-founders has built a vintage clothing company that fulfills over 3000+ orders per month. And through years of experience, we have understood the challenges that come with pricing products and the tedious nature of the process.
 
 Our software integrates directly with eBay, allowing you to easily upload your priced products and list them for sale on eBay with a single click. Not only will this save you time, but it will also reduce operational costs.
 
