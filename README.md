@@ -1,10 +1,7 @@
 <img src="werabl_finish_rectangle.png" width="30%" height="auto">
-
-
-
-
-
-
+<br>
+<br>
+<br>
 Through years of experience, we understand the challenges that come with pricing research and have developed a tool to solve this problem. Our tool is specifically optimized for efficiency of operations and makes the pricing research process 10X faster.
 
 Our team possesses a strategic blend of technical know-how and hands-on experience in the vintage clothing industry. One of our co-founders, in particular, has a demonstrated success in the vintage clothing business, having established a company that successfully fulfills over 3000+ orders per month. 
