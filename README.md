@@ -15,7 +15,7 @@ Our software integrates directly with eBay, allowing you to easily upload your p
 
 Our proprietary process enables us to identify the most closely matching vintage clothing items and extract the essential data. We then use this data to make optimal pricing recommendations for our users. This ensures that they are pricing their items competitively to increase the likelihood of a sale.
 
-We believe that this tool can be of tremendous value to anyone in the vintage clothing industry and we are excited to share it with you. Let our experience and success work for you. With our tool, you can improve your pricing research process and increase your chances of making a sale.
+We believe that this tool can be of tremendous value to anyone in the vintage and pre-loved clothing industry and we are excited to share it with you. Let our experience and success work for you. With our tool, you can improve your pricing research process and increase your chances of making a sale.
 
 -------
 
