@@ -1,4 +1,4 @@
-![image-description](Werabl_A_female_researcher_looking_through_an_industry_research__Making-it-10-times-easier-to-conduct-pricing-research.png)
+![image-description](WerablSiteLogo.png)
 
 Our team possesses a strategic blend of technical know-how and hands-on experience in the vintage clothing industry. One of our co-founders, in particular, has a demonstrated success in the vintage clothing business, having established a company that successfully fulfills over 3000+ orders per month. 
 
