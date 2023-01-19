@@ -1,12 +1,11 @@
-<img src="werabl_finish_rectangle.png" width="20%" height="auto">
-
-<img src="Werabl_A_female_researcher_looking_through_an_industry_research__Making-it-10-times-easier-to-conduct-pricing-research.png" width="50%" height="auto" style="padding-left: 1200px;">
+<p align="center">
+  <img src="Werabl_Used_Clothing_Industry-minimalist-navy-silver-magenta-beige-used-clothes-warehouse-illustration-variety-shirts-pants-dresses-suits-racks-shelves-warehouse-workers-negative-space.png" width="50%" height="auto">
+</p>
 
 ---
+We have developed a tool that makes the pricing research process 10X faster - optimizing for efficiency of operations.
 
-Through years of experience, we understand the challenges that come with pricing research and have developed a tool to solve this problem. Our tool is specifically optimized for efficiency of operations and makes the pricing research process 10X faster.
-
-Our team possesses a strategic blend of technical know-how and hands-on experience in the vintage clothing industry. One of our co-founders, in particular, has a demonstrated success in the vintage clothing business, having established a company that successfully fulfills over 3000+ orders per month.<br> 
+Our team possesses a strategic blend of technical know-how and hands-on experience in the vintage clothing industry. One of our co-founders, in particular, has a demonstrated success in the vintage clothing business, having established a company that successfully fulfills over 3000+ orders per month. Through years of experience, we have understood the challenges that come with pricing products and have developed our tool to solve this problem.
 
 Our software integrates directly with eBay, allowing you to easily upload your priced products and list them for sale on eBay with a single click. Not only will this save you time, but it will also reduce operational costs.
 
