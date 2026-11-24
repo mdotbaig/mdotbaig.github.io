@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Muhammad Baig | Applied AI Engineer | Houston, TX</title>
+  <meta name="description" content="Muhammad Baig, AI engineer in Houston, Texas: fine-tuning open models, data center site selection, and applied AI at enterprise scale." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;1,400&family=Schibsted+Grotesk:wght@500;600&display=swap" rel="stylesheet" />
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        if (saved === "dark" || saved === "light") {
+          document.documentElement.dataset.theme = saved;
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #FFFFFF;
+      --ink: #111211;
+      --ink-soft: #2E3230;
+      --muted: #585D5A;
+      --quiet: #767B78;
+      --rule: #E4E5E2;
+      --rule-strong: #111211;
+      --link-underline: #BDBFBA;
+      --accent: #0A665C;
+      --selection-bg: #E4EFEA;
+
+      --stone-1: #FFFFFF;
+      --stone-2: #FAFAF8;
+      --stone-3: #F3F3EF;
+      --stone-4: #EAEAE4;
+      --base-rule: #D3D4CE;
+
+      --font-text: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --font-display: "Schibsted Grotesk", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --max: 920px;
+    }
+
+    :root[data-theme="light"] {
+      color-scheme: light;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #111211;
+        --ink: #ECECE8;
+        --ink-soft: #C9CCC8;
+        --muted: #9BA09C;
+        --quiet: #7B807C;
+        --rule: #252725;
+        --rule-strong: #ECECE8;
+        --link-underline: #4B4F4C;
+        --accent: #4CB8AA;
+        --selection-bg: #1B3B36;
+
+        --stone-1: #111211;
+        --stone-2: #151716;
+        --stone-3: #1A1C1B;
+        --stone-4: #202321;
+        --base-rule: #323633;
+      }
+    }
+
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #111211;
+      --ink: #ECECE8;
+      --ink-soft: #C9CCC8;
+      --muted: #9BA09C;
+      --quiet: #7B807C;
+      --rule: #252725;
+      --rule-strong: #ECECE8;
+      --link-underline: #4B4F4C;
+      --accent: #4CB8AA;
+      --selection-bg: #1B3B36;
+
+      --stone-1: #111211;
+      --stone-2: #151716;
+      --stone-3: #1A1C1B;
+      --stone-4: #202321;
+      --base-rule: #323633;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-text);
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    ::selection {
+      background: var(--selection-bg);
+      color: var(--ink);
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: underline;
+      text-decoration-color: var(--link-underline);
+      text-underline-offset: 4px;
+      text-decoration-thickness: 1px;
+      transition: color 0.15s ease, text-decoration-color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+      text-decoration-color: var(--accent);
+    }
+
+    a:focus-visible,
+    .theme-toggle:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    h1, h2, h3 {
+      font-family: var(--font-display);
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    header {
+      padding: 84px 0 56px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--quiet);
+    }
+
+    .theme-toggle {
+      background: none;
+      border: none;
+      padding: 0;
+      font-family: var(--font-text);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--quiet);
+      text-decoration: underline;
+      text-decoration-color: var(--link-underline);
+      text-underline-offset: 4px;
+      text-decoration-thickness: 1px;
+      cursor: pointer;
+      transition: color 0.15s ease, text-decoration-color 0.15s ease;
+    }
+
+    .theme-toggle:hover {
+      color: var(--accent);
+      text-decoration-color: var(--accent);
+    }
+
+    .theme-toggle:empty {
+      display: none;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 5vw, 3.25rem);
+      line-height: 1.06;
+      letter-spacing: -0.025em;
+      margin-bottom: 24px;
+    }
+
+    .lead {
+      font-size: 1.06rem;
+      line-height: 1.72;
+      color: var(--ink-soft);
+      margin-bottom: 30px;
+      text-wrap: pretty;
+    }
+
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 28px;
+      align-items: baseline;
+      font-size: 0.94rem;
+      font-weight: 500;
+    }
+
+    main {
+      padding: 68px 0 84px;
+    }
+
+    section {
+      margin-bottom: 84px;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px 24px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--rule-strong);
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      line-height: 1.25;
+      letter-spacing: -0.015em;
+    }
+
+    .section-intro {
+      color: var(--quiet);
+      font-size: 0.9rem;
+    }
+
+    .projects {
+      display: block;
+    }
+
+    .project {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      column-gap: 48px;
+      align-items: start;
+      padding: 34px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .project:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .project-meta h3 {
+      font-size: 1.12rem;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+
+    .tag {
+      display: block;
+      font-size: 0.82rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .project-body p {
+      color: var(--muted);
+      font-size: 0.96rem;
+      line-height: 1.7;
+      max-width: 60ch;
+      margin-bottom: 16px;
+      text-wrap: pretty;
+    }
+
+    .project-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .project-body .outcome {
+      color: var(--ink);
+      font-size: 0.94rem;
+      line-height: 1.66;
+      padding-left: 16px;
+      border-left: 2px solid var(--accent);
+    }
+
+    .stack {
+      margin-top: 28px;
+    }
+
+    .layers {
+      border: 1px solid var(--rule);
+    }
+
+    .layer {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      column-gap: 40px;
+      align-items: baseline;
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .layer:last-child {
+      border-bottom: none;
+    }
+
+    .layer:nth-child(1) { background: var(--stone-1); }
+    .layer:nth-child(2) { background: var(--stone-2); }
+    .layer:nth-child(3) { background: var(--stone-3); }
+    .layer.base {
+      background: var(--stone-4);
+      border-top: 1px solid var(--base-rule);
+    }
+
+    .layer h3 {
+      font-size: 1rem;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+    }
+
+    .layer p {
+      font-size: 0.93rem;
+      line-height: 1.62;
+      color: var(--muted);
+      max-width: 58ch;
+      text-wrap: pretty;
+    }
+
+    .layer.base p {
+      color: var(--ink-soft);
+    }
+
+    .across-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 40px;
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .across-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--quiet);
+      margin-bottom: 6px;
+    }
+
+    .across h3 {
+      font-size: 1rem;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+
+    .across p {
+      font-size: 0.92rem;
+      line-height: 1.62;
+      color: var(--muted);
+      text-wrap: pretty;
+    }
+
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 28px 0 64px;
+      color: var(--quiet);
+      font-size: 0.88rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    footer a {
+      color: var(--muted);
+    }
+
+    @media (max-width: 780px) {
+      .project {
+        grid-template-columns: 1fr;
+        row-gap: 14px;
+        padding: 28px 0;
+      }
+
+      .layer {
+        grid-template-columns: 1fr;
+        row-gap: 6px;
+        padding: 18px 20px;
+      }
+
+      .across-grid {
+        grid-template-columns: 1fr;
+        row-gap: 24px;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .wrap {
+        padding: 0 20px;
+      }
+
+      header {
+        padding: 52px 0 40px;
+      }
+
+      main {
+        padding: 52px 0 64px;
+      }
+
+      section {
+        margin-bottom: 64px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="header-top">
+        <div class="eyebrow">Applied AI Engineering &middot; Houston, Texas</div>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme"></button>
+      </div>
+      <h1>Muhammad Baig</h1>
+      <p class="lead">
+        I'm an AI engineer with experience at every layer of an AI system, from the model and its data to the compute and power beneath it. My work covers multi-agent tools for complex research and analysis, workflow automation, data center site selection, fine-tuning an open model to translate a low-resource language, and applied AI at enterprise scale. I bring 20 years of technical, managerial, and entrepreneurial experience across tech, energy, logistics, and healthcare on three continents, advising founders and operators on practical adoption.
+      </p>
+      <div class="contact-row">
+        <a href="mailto:m.baig.houston@gmail.com">m.baig.houston@gmail.com</a>
+        <a href="https://github.com/mdotbaig">github.com/mdotbaig</a>
+      </div>
+    </header>
+
+    <main>
+      <section aria-labelledby="work-heading">
+        <div class="section-head">
+          <h2 id="work-heading">Selected work</h2>
+          <p class="section-intro">
+            Representative projects, with client and company names omitted.
+          </p>
+        </div>
+
+        <div class="projects">
+          <article class="project">
+            <div class="project-meta">
+              <h3>Federal E-Rate product eligibility pipeline</h3>
+              <span class="tag">AI Workflows &middot; Regulatory Data</span>
+            </div>
+            <div class="project-body">
+              <p>
+                A networking hardware manufacturer had no record of which products across 36,000+ unevenly structured catalog pages qualified for federal E-Rate funding. I broke the FCC's proposed FY2027 Eligible Services List into 49 verbatim, citable rules, audited all 36,079 indexed product URLs, and built a classification pipeline pairing AI reasoning with deterministic code checks and a plain-English review workbook for edge cases.
+              </p>
+              <p class="outcome">
+                The pipeline produced a verified eligibility dataset of 26,731 part numbers, identifying 101 qualifying product families and 266 standalone parts. It went into a sales prospecting tool for pre-bid outreach and was reused for a second manufacturer's catalog.
+              </p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-meta">
+              <h3>Dialect translation model for a low-resource language</h3>
+              <span class="tag">Fine-Tuning &middot; Synthetic Data</span>
+            </div>
+            <div class="project-body">
+              <p>
+                I fine-tuned an open-weight 12B translation model with LoRA adapters for a low-resource language with nine regional dialects. Most of the language's training text is in its standard written form, so I built a synthetic data generator whose quality gates reject standard-form vocabulary and duplicate examples, and compared several models to check the generated data.
+              </p>
+              <p class="outcome">
+                The model reached 93.8% accuracy on dialect benchmarks and kept the northern and southern dialects distinct, without drifting into the standard form or a more widely spoken dialect.
+              </p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-meta">
+              <h3>Data center site selection &amp; power feasibility</h3>
+              <span class="tag">Geospatial &middot; Energy</span>
+            </div>
+            <div class="project-body">
+              <p>
+                I built a site suitability model that scores 6,896 census tracts across Texas on nine weighted factors, among them power infrastructure, fiber connectivity, water, natural hazards, natural gas, and workforce. Python and QGIS pipelines handle the spatial indexing, joins, and proximity analysis. For a greenfield build, I identified substations with spare capacity, assessed adjacent land, and compared buying and leasing on an all-in rate per kilowatt-hour.
+              </p>
+              <p class="outcome">
+                I worked with 131+ stakeholders, from substation owners and utilities to municipalities and the grid operator, and cleared blockers such as missing meter identifiers before any capital was committed.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="capabilities-heading">
+        <div class="section-head">
+          <h2 id="capabilities-heading">Capabilities</h2>
+        </div>
+
+        <div class="stack">
+          <div class="layers">
+            <div class="layer">
+              <h3>AI applications &amp; workflows</h3>
+              <p>LLM tools, multi-step agent workflows, rapid working prototypes, automated data pipelines, operator dashboards, and exact-layout reporting.</p>
+            </div>
+            <div class="layer">
+              <h3>Models &amp; fine-tuning</h3>
+              <p>Adapting open-source models to specialized domains and narrow operational tasks where off-the-shelf prompting falls short.</p>
+            </div>
+            <div class="layer">
+              <h3>Data engineering &amp; scoring</h3>
+              <p>Sourcing, verifying, and combining public and private datasets; synthetic training data for niche tasks; geospatial pipelines and weighted scoring models.</p>
+            </div>
+            <div class="layer base">
+              <h3>Compute &amp; infrastructure</h3>
+              <p>GPU workload sizing, sourcing compute, and site, power, cooling, and fiber feasibility for teams deploying dedicated AI infrastructure.</p>
+            </div>
+          </div>
+
+          <div class="across-grid">
+            <div class="across">
+              <span class="across-label">Across every layer</span>
+              <h3>Applied research &amp; method design</h3>
+              <p>Turning open-ended operational questions into tested methods, verified tool designs, and build-vs-buy recommendations.</p>
+            </div>
+            <div class="across">
+              <span class="across-label">Across every layer</span>
+              <h3>Audits &amp; feasibility</h3>
+              <p>Forensic code audits, reverse-engineering undocumented systems, and evidence-graded feasibility reviews before teams commit budget.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Muhammad Baig</span>
+      <a href="mailto:m.baig.houston@gmail.com">m.baig.houston@gmail.com</a>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var btn = document.getElementById("theme-toggle");
+      var mq = window.matchMedia("(prefers-color-scheme: dark)");
+
+      function isDark() {
+        if (root.dataset.theme === "dark") return true;
+        if (root.dataset.theme === "light") return false;
+        return mq.matches;
+      }
+
+      function sync() {
+        var dark = isDark();
+        btn.textContent = dark ? "Light" : "Dark";
+        btn.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+      }
+
+      btn.addEventListener("click", function () {
+        var next = isDark() ? "light" : "dark";
+        root.dataset.theme = next;
+        try { localStorage.setItem("theme", next); } catch (e) {}
+        sync();
+      });
+
+      if (mq.addEventListener) {
+        mq.addEventListener("change", sync);
+      }
+
+      sync();
+    })();
+  </script>
+</body>
+</html>
