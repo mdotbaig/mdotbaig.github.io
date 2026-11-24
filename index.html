@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Baig | Applied AI Engineer | Houston, TX</title>
+  <meta name="description" content="Muhammad Baig, AI engineer in Houston, Texas: fine-tuning open models, data center site selection, and applied AI at enterprise scale." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;1,400&family=Schibsted+Grotesk:wght@500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #FAF9F6;
+      --surface: #FFFFFF;
+      --surface-subtle: #F4F3EF;
+      --surface-tint: #F6F7F5;
+      --layer-1: #FFFFFF;
+      --layer-2: #FBFBF9;
+      --layer-3: #F4F5F2;
+      --layer-base: #171C1A;
+
+      --ink: #141716;
+      --ink-secondary: #3A403E;
+      --muted: #58605D;
+      --subtle: #6E7673;
+
+      --border: rgba(20, 23, 22, 0.09);
+      --border-strong: rgba(20, 23, 22, 0.15);
+
+      --accent: #0D7A6D;
+      --accent-dark: #095B51;
+      --accent-soft: #EBF5F3;
+
+      --font-text: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --font-display: "Schibsted Grotesk", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+      --radius-sm: 10px;
+      --radius-md: 14px;
+      --radius-lg: 16px;
+      --radius-pill: 999px;
+      --shadow-sm: 0 1px 2px rgba(20, 23, 22, 0.04);
+      --shadow-md: 0 6px 20px rgba(20, 23, 22, 0.05);
+      --max: 960px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-text);
+      font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    ::selection {
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.16s ease, background-color 0.16s ease, border-color 0.16s ease, transform 0.16s ease;
+    }
+
+    a:hover {
+      color: var(--accent-dark);
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    h1, h2, h3 {
+      font-family: var(--font-display);
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* Header: open, calm editorial layout */
+    header {
+      padding: 76px 0 48px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex: none;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 5.2vw, 3.35rem);
+      line-height: 1.08;
+      letter-spacing: -0.028em;
+      margin-bottom: 22px;
+    }
+
+    .lead {
+      max-width: 62ch;
+      font-size: 1.08rem;
+      line-height: 1.72;
+      color: var(--ink-secondary);
+      margin-bottom: 32px;
+      text-wrap: pretty;
+    }
+
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .btn,
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: var(--radius-pill);
+      font-size: 0.9rem;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    .btn {
+      background: var(--ink);
+      color: #FFFFFF;
+      border: 1px solid var(--ink);
+    }
+
+    .btn:hover {
+      background: #282E2C;
+      border-color: #282E2C;
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
+    .btn-secondary {
+      background: var(--surface);
+      color: var(--ink);
+      border: 1px solid var(--border-strong);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-secondary:hover {
+      background: var(--surface-subtle);
+      border-color: rgba(20, 23, 22, 0.24);
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .btn svg,
+    .btn-secondary svg {
+      width: 15px;
+      height: 15px;
+      flex: none;
+      opacity: 0.85;
+    }
+
+    /* Main content */
+    main {
+      padding: 64px 0 76px;
+    }
+
+    section {
+      margin-bottom: 76px;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-head {
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      font-size: clamp(1.45rem, 2.5vw, 1.75rem);
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      font-size: 0.96rem;
+      max-width: 60ch;
+      text-wrap: pretty;
+    }
+
+    /* Selected work: asymmetric two-column editorial cards */
+    .projects {
+      display: grid;
+      gap: 18px;
+    }
+
+    .card {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      column-gap: 36px;
+      align-items: start;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 30px;
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .card:hover {
+      border-color: var(--border-strong);
+      box-shadow: var(--shadow-md);
+    }
+
+    .card-meta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      line-height: 1.3;
+      letter-spacing: -0.012em;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 11px;
+      border-radius: var(--radius-pill);
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+      font-size: 0.77rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
+
+    .card-body p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.68;
+      margin-bottom: 16px;
+      text-wrap: pretty;
+    }
+
+    .card-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .card-body .outcome {
+      color: var(--ink);
+      font-size: 0.92rem;
+      line-height: 1.62;
+      padding: 15px 18px;
+      background: var(--surface-tint);
+      border: 1px solid rgba(20, 23, 22, 0.06);
+      border-radius: var(--radius-sm);
+    }
+
+    .card-body .outcome::before {
+      content: "Outcome";
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 5px;
+    }
+
+    /* Capabilities: unified architectural stack + cross-cutting row */
+    .stack {
+      display: grid;
+      gap: 16px;
+    }
+
+    .layers {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .layer {
+      display: grid;
+      grid-template-columns: 228px 1fr;
+      column-gap: 32px;
+      align-items: baseline;
+      padding: 22px 28px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .layer:last-child {
+      border-bottom: none;
+    }
+
+    .layer:nth-child(1) { background: var(--layer-1); }
+    .layer:nth-child(2) { background: var(--layer-2); }
+    .layer:nth-child(3) { background: var(--layer-3); }
+
+    .layer h3 {
+      font-size: 1.03rem;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+    }
+
+    .layer p {
+      font-size: 0.93rem;
+      line-height: 1.62;
+      color: var(--muted);
+      text-wrap: pretty;
+    }
+
+    .layer.base {
+      background: var(--layer-base);
+      color: #FFFFFF;
+    }
+
+    .layer.base h3 {
+      color: #FFFFFF;
+    }
+
+    .layer.base p {
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .across-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .across {
+      display: flex;
+      flex-direction: column;
+      padding: 22px 26px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .across-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .across h3 {
+      font-size: 1.03rem;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+
+    .across p {
+      font-size: 0.92rem;
+      line-height: 1.6;
+      color: var(--muted);
+      text-wrap: pretty;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0 56px;
+      color: var(--subtle);
+      font-size: 0.88rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    footer a {
+      color: var(--muted);
+    }
+
+    footer a:hover {
+      color: var(--ink);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 800px) {
+      .card {
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+        padding: 24px;
+      }
+
+      .layer {
+        grid-template-columns: 1fr;
+        row-gap: 6px;
+        padding: 20px 24px;
+      }
+
+      .across-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .wrap {
+        padding: 0 20px;
+      }
+
+      header {
+        padding: 48px 0 36px;
+      }
+
+      main {
+        padding: 48px 0 56px;
+      }
+
+      section {
+        margin-bottom: 56px;
+      }
+
+      .lead {
+        font-size: 1.02rem;
+      }
+
+      .card,
+      .across {
+        padding: 20px;
+      }
+
+      .layer {
+        padding: 18px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">Applied AI Engineering &middot; Houston, Texas</div>
+      <h1>Muhammad Baig</h1>
+      <p class="lead">
+        I'm an AI engineer with hands-on experience across the full stack&mdash;from fine-tuning models and building data pipelines to evaluating the compute and power beneath them. My work spans multi-agent research and analysis tools, workflow automation, low-resource language translation, data center site selection, and applied AI at enterprise scale. I bring 20 years of technical, managerial, and entrepreneurial experience across tech, energy, logistics, and healthcare on three continents, advising founders and operators on practical adoption.
+      </p>
+      <div class="contact-row">
+        <a class="btn" href="mailto:m.baig.houston@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+            <path d="m3 7 9 6 9-6"></path>
+          </svg>
+          m.baig.houston@gmail.com
+        </a>
+        <a class="btn-secondary" href="https://github.com/mdotbaig">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"></path>
+          </svg>
+          github.com/mdotbaig
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section aria-labelledby="work-heading">
+        <div class="section-head">
+          <h2 id="work-heading">Selected work</h2>
+          <p class="section-intro">
+            Representative projects (client and company names omitted).
+          </p>
+        </div>
+
+        <div class="projects">
+          <article class="card">
+            <div class="card-meta">
+              <h3>Federal E-Rate product eligibility pipeline</h3>
+              <span class="tag">AI Workflows &middot; Regulatory Data</span>
+            </div>
+            <div class="card-body">
+              <p>
+                A networking hardware manufacturer had no record of which products across 36,000+ unevenly structured catalog pages qualified for federal E-Rate funding. I broke the FCC's proposed FY2027 Eligible Services List into 49 verbatim, citable rules, audited all 36,079 indexed product URLs, and built a classification pipeline pairing AI reasoning with deterministic code checks and a plain-English review workbook for edge cases.
+              </p>
+              <p class="outcome">
+                The pipeline produced a verified eligibility dataset of 26,731 part numbers, identifying 101 qualifying product families and 266 standalone parts. It powered a sales prospecting tool for pre-bid outreach and was reused for a second manufacturer's catalog.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <h3>Dialect translation model for a low-resource language</h3>
+              <span class="tag">Fine-Tuning &middot; Synthetic Data</span>
+            </div>
+            <div class="card-body">
+              <p>
+                I fine-tuned an open 12-billion-parameter translation model with LoRA adapters to translate an Arabic dialect across nine regional sub-dialects. Little usable training text existed, so I built a synthetic data generator with quality gates that reject Modern Standard Arabic vocabulary and duplicates, cross-checking outputs across multiple models.
+              </p>
+              <p class="outcome">
+                The model reached 93.8% accuracy on dialect benchmarks and kept the northern and southern sub-dialects distinct, without drifting into Modern Standard Arabic or Egyptian Arabic.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <h3>Data center site selection &amp; power feasibility</h3>
+              <span class="tag">Geospatial &middot; Energy</span>
+            </div>
+            <div class="card-body">
+              <p>
+                I built a site suitability model that scores 6,896 census tracts across Texas on nine weighted factors, among them power infrastructure, fiber connectivity, water, natural hazards, natural gas, and workforce. Python and QGIS pipelines handle the spatial indexing, joins, and proximity analysis. For a greenfield build, I identified substations with spare capacity, assessed adjacent land, and compared buy-vs-lease economics on an all-in cost per kilowatt-hour.
+              </p>
+              <p class="outcome">
+                I worked with 131+ stakeholders, from substation owners and utilities to municipalities and the grid operator, and cleared blockers such as missing meter identifiers before any capital was committed.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="capabilities-heading">
+        <div class="section-head">
+          <h2 id="capabilities-heading">Capabilities</h2>
+        </div>
+
+        <div class="stack">
+          <div class="layers">
+            <div class="layer">
+              <h3>AI applications &amp; workflows</h3>
+              <p>LLM tools, multi-step agent workflows, rapid working prototypes, automated data pipelines, operator dashboards, and exact-layout reporting.</p>
+            </div>
+            <div class="layer">
+              <h3>Models &amp; fine-tuning</h3>
+              <p>Adapting open-source models to specialized domains and narrow operational tasks where off-the-shelf prompting falls short.</p>
+            </div>
+            <div class="layer">
+              <h3>Data engineering &amp; scoring</h3>
+              <p>Sourcing, verifying, and combining public and private datasets; synthetic training data for niche tasks; geospatial pipelines and weighted scoring models.</p>
+            </div>
+            <div class="layer base">
+              <h3>Compute &amp; infrastructure</h3>
+              <p>GPU workload sizing, sourcing compute, and site, power, cooling, and fiber feasibility for teams deploying dedicated AI infrastructure.</p>
+            </div>
+          </div>
+
+          <div class="across-grid">
+            <div class="across">
+              <span class="across-label">Across every layer</span>
+              <h3>Applied research &amp; method design</h3>
+              <p>Turning open-ended operational questions into tested methods, verified tool designs, and build-vs-buy recommendations.</p>
+            </div>
+            <div class="across">
+              <span class="across-label">Across every layer</span>
+              <h3>Audits &amp; feasibility</h3>
+              <p>Forensic code audits, reverse-engineering undocumented systems, and evidence-graded feasibility reviews before teams commit budget.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Muhammad Baig</span>
+      <a href="mailto:m.baig.houston@gmail.com">m.baig.houston@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
